@@ -1,34 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Applet-Style Platformer</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retro Platformer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <canvas id="game"></canvas>
-
-  <!-- On-screen mobile controls (appear automatically on small widths) -->
-  <div id="touch-controls" class="hidden">
-    <button id="left-btn" class="touch-btn">◀</button>
-    <button id="jump-btn" class="touch-btn">▲</button>
-    <button id="right-btn" class="touch-btn">▶</button>
-  </div>
-
-  <!-- Minimal UI below the canvas -->
-  <div id="ui">
-    <div id="hud">
-      <div id="score">Score: 0</div>
-      <div id="lives">Lives: 3</div>
-      <div id="level">Level: 1</div>
-    </div>
-    <div id="controls">
-      <button id="pause">Pause</button>
-      <button id="restart">Restart</button>
-    </div>
-  </div>
-
+  <canvas id="gameCanvas" width="960" height="540"></canvas>
   <script src="game.js"></script>
 </body>
 </html>
